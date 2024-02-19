@@ -4,8 +4,10 @@ from models.model import User
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
 
+
 class UserBase(BaseModel):
     username: str
+
 
 class UserService:
     def create_user(self, db: Session, user):
